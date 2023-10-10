@@ -103,7 +103,6 @@ def chat():
         return jsonify(response_data)
 
     except Exception as e:
-        # Handle exceptions
         error_message = str(e)
         return jsonify({"error": error_message}), 500
 
